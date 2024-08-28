@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPS UNIDAD CORAZON DE ARTE TERAPIA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login -->
+    <div id="login" class="page">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <!-- Main content area -->
+    <div id="main-content" class="container" style="display: none;">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <h2>IPS UNIDAD CORAZON DE ARTE TERAPIA</h2>
+            <nav>
+                <ul>
+                    <li><a href="#" id="show-dashboard">Dashboard</a></li>
+                    <li><a href="#" id="show-patients">Pacientes Agregados</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="content">
+            <!-- Dashboard -->
+            <div id="dashboard" class="page">
+                <h2>Dashboard</h2>
+                <form id="add-patient-form">
+                    <h3>Agregar Paciente</h3>
+                    <input type="text" id="patient-name" placeholder="Nombre Completo" required>
+                    <input type="number" id="patient-age" placeholder="Edad" required>
+                    <input type="date" id="patient-date" required>
+                    <textarea id="patient-evolution" placeholder="Evolución Diaria" required></textarea>
+                    <textarea id="patient-observations" placeholder="Observaciones" required></textarea>
+                    <button type="submit">Guardar</button>
+                </form>
+            </div>
+
+            <!-- Pacientes Agregados -->
+            <div id="patients" class="page">
+                <h2>Pacientes Agregados</h2>
+                <table id="patients-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Fecha de Atención</th>
+                            <th>Evolución Diaria</th>
+                            <th>Observaciones</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
